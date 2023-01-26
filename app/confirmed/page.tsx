@@ -1,18 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import Nav from "../../components/nav";
-import Head from "next/head";
 import Share from "../../components/socialmediashare";
 
 
 function Confirmation() {
   return (
     <div className="min-h-screen">
-         <Head>
-        <title>You're confirmed!</title>
-        <link rel="icon" href="/conversly_logo.svg" />
-      </Head> 
-
       <div className="flex flex-col py-5 items-center space-y-1">
       <Image
               src="/womanReading.png"
