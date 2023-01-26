@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useUser } from "../context/user";
 import { usePathname } from 'next/navigation';
 
 function Nav() {
   
-  const user = useUser();
   const [open, setOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
