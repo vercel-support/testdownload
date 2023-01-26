@@ -5,7 +5,7 @@ import Link from "next/link";
 // import ContactIcons from "../components/socialcontact";
 // import TypingAnimation from "../components/typinganimation";
 
-const Home: NextPage = () => {
+function Home() {
 
   return (
     <div className="h-[90vh] bg-conversly_color-snow">
