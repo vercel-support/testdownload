@@ -2,8 +2,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import dotenv from 'dotenv'
-dotenv.config()
 // import ContactIcons from "../components/socialcontact";
 // import TypingAnimation from "../components/typinganimation";
 
