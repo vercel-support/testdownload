@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 // import Share from "../../components/SocialMediaShare";
@@ -7,10 +6,6 @@ import Link from "next/link";
 function About() {
   return (
     <div className="body min-h-screen">
-      <Head>
-        <title>About Conversly</title>
-        <link rel="icon" href="/conversly_logo.svg" />
-      </Head>
 
       <div className="absolute bg-conversly_color-blush w-full h-4/6 md:h-2/6 lg:h-3/6 -ml-6 mt-32 lg:mt-40 z-0 lg:-ml-44"></div>
       <div className="flex flex-col md:flex-row w-full pt-20 md:pt-40 mb-20 flex-1 justify-center relative z-10">
