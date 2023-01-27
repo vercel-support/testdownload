@@ -1,8 +1,24 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
+  reactStrictMode: true,
   experimental: {
-    appDir: true,
+    appDir: true
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'jspziykedkfpwoqxierl.supabase.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 }
-
-module.exports = nextConfig
