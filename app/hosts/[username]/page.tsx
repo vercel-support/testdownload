@@ -18,7 +18,6 @@ export default async function HostPage({
     .match({ username })
     .single();
   const [host] = await Promise.all([profile]);
-  // const router = useRouter();
 
   return (
     <div>
