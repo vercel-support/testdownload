@@ -24,7 +24,7 @@ export default async function Page() {
            {data!.map((profile) => (
              <div>
                <Link
-                 href={`/hosts/${profile.username}`}
+                 href={`/hosts/${profile.id}`}
                  key={profile.id}
                >
                  <div
