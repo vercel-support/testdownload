@@ -31,19 +31,18 @@ function About() {
             <h1 className="text-4xl mt-8 font-title md:w-3 md:text-right mb-8">About Conversly</h1>
 
             <p className="paragraph">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
+            At Conversly, our mission is to connect knowledgable language hosts with curious students seeking to expand their conversational vocabulary in multiple languages! 
             </p>
 
             <p className="paragraph">
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt.
+            We believe that the most effective way to achieve this is through engaging spoken language sessions with a vetted host. As experience has shown that students are able to improve their pronunciation and confidence in speaking aloud to others.
             </p>
 
-            <p className="paragraph">Subscribe to stay up to date!</p>
+            <p className="paragraph">Our Hosts offer classes from beginner to advanced in 10 languages (and growing!) to accomodate as many language enthusiasts and world travelers as possible.</p>
+
+            <p className="paragraph">We are still new, but we have big plans for the future.</p>
+
+
             <Link
               href={"/"}
               className="py-2 px-8 bg-conversly_color hover:bg-conversly_color-defaulthover text-conversly_color-snow rounded-3xl w-44"
