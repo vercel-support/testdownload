@@ -8,14 +8,14 @@ import Link from "next/link";
 export const revalidate = 60;
 
 export default async function HostPage({
-  params: { id },
+  params: { username },
 }: {
-  params: { id: string };
+  params: { username: string };
 }) {
   const { data: profile } = await supabase
     .from("profiles")
     .select()
-    .match({ id })
+    .match({ username })
     .single();
   const [host] = await Promise.all([profile]);
 
