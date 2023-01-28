@@ -25,10 +25,10 @@ export default async function Page() {
              <div>
                <Link
                  href={`/hosts/${profile.username}`}
-                 key={profile.username}
+                 key={profile.id}
                >
                  <div
-                   id={profile.username}
+                   id={profile.id}
                    className="flex flex-col justify-center items-center p-8 shadow-[0_0px_20px_0px_rgba(0,0,0,0.15)] hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] "
                  >
                    {profile.avatar_url && (
