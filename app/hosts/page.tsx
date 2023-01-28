@@ -24,11 +24,11 @@ export default async function Page() {
            {data!.map((profile) => (
              <div>
                <Link
-                 href={`/hosts/${profile.id}`}
-                 key={profile.id}
+                 href={`/hosts/${profile.username}`}
+                 key={profile.username}
                >
                  <div
-                   id={profile.id}
+                   id={profile.username}
                    className="flex flex-col justify-center items-center p-8 shadow-[0_0px_20px_0px_rgba(0,0,0,0.15)] hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] "
                  >
                    {profile.avatar_url && (
