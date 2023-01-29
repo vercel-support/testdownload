@@ -1,8 +1,8 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-// import ContactIcons from "../components/socialcontact";
-// import TypingAnimation from "../components/typinganimation";
+import ContactIcons from "../components/socialcontact";
+import TypingAnimation from "../components/typinganimation";
 
 function Home() {
 
@@ -12,7 +12,7 @@ function Home() {
         {/* mobile */}
         <div className="md:hidden bg-[url('/mobile_bg.png')] bg-cover bg-no-repeat bg-center h-full w-full flex flex-col items-end pb-10 justify-center">
           <div className="mt-[20%] mx-auto">
-            {/* <TypingAnimation /> */}
+            <TypingAnimation />
             <h1 className="font-title text-conversly_color-snow mt-3 text-3xl md:text-4xl">
               What language <br /> are you learning?
             </h1>
@@ -45,11 +45,11 @@ function Home() {
           <div className="flex flex-row h-7/8 justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] md:rounded-t-[4rem] md:pt-16 md:pb-0 md:px-16 lg:w-[40%] lg: lg:flex-1">
             <div className="flex flex-row">
               <div className="md:max-w-2xl space-y-5 lg:mx-[20%]">
-                {/* <TypingAnimation /> */}
+                <TypingAnimation />
                 <h1 className="font-title text-conversly_color-snow text-3xl md:text-5xl">
                   What language are you learning?
                 </h1>
-                {/* <ContactIcons /> */}
+                <ContactIcons />
               </div>
               <div className="flex h-full mx-auto items-end lg:absolute bottom-0 lg:-mt-[22%] lg:ml-[30%] z-50">
                 <Image
