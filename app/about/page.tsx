@@ -43,12 +43,12 @@ function About() {
             <p className="paragraph">We are still new, but we have big plans for the future.</p>
 
 
-            <Link
+            {/* <Link
               href={"/"}
               className="py-2 px-8 bg-conversly_color hover:bg-conversly_color-defaulthover text-conversly_color-snow rounded-3xl w-44"
             >
               Subscribe here
-            </Link>
+            </Link> */}
           </div>
         </div>
          
