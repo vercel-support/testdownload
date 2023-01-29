@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import ContactIcons from "../components/socialcontact";
+//import ContactIcons from "../components/socialcontact";
 import TypingAnimation from "../components/typinganimation";
 
 function Home() {
@@ -49,7 +49,7 @@ function Home() {
                 <h1 className="font-title text-conversly_color-snow text-3xl md:text-5xl">
                   What language are you learning?
                 </h1>
-                <ContactIcons />
+                {/* <ContactIcons /> */}
               </div>
               <div className="flex h-full mx-auto items-end lg:absolute bottom-0 lg:-mt-[22%] lg:ml-[30%] z-50">
                 <Image
