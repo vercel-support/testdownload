@@ -38,8 +38,8 @@ export default async function HostPage({
             See all hosts
           </h1>
         </Link>
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="body flex flex-col h-7/8 justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] lg:pl-44 md:rounded-t-[4rem] md:rounded-tl-none md:pt-16 md:py-16 md:px-16 lg:w-[70%] lg:h-[70vh] lg:mt-40">
+        <div className="flex flex-col lg:flex-row items-center md:mt-16">
+          <div className="body flex flex-col h-7/8 justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] lg:pl-44 md:rounded-t-[4rem] md:rounded-tl-none md:pt-44 md:p-16 lg:w-[70%] lg:h-[70vh]">
             <div className="flex flex-col">
               <div className="flex h-full mx-auto items-end bottom-0 z-50">
                 <Image

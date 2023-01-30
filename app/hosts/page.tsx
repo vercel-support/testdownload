@@ -23,7 +23,7 @@ export default async function Page() {
          <div className="grid w-full md:grid-flow-col md:grid-cols-3 xl:grid-cols-4 gap-8">
            {data!.map((profile) => (
              <div>
-               <a href={`/hosts/${profile.username}`}
+               <Link href={`/hosts/${profile.username}`}
                  key={profile.id}
                >
                  <div
@@ -45,7 +45,7 @@ export default async function Page() {
                    <p>{profile.languages}</p>
                    <button className="button w-full">See lessons</button>
                  </div>
-               </a>
+               </Link>
             </div>
            ))}
          </div>
