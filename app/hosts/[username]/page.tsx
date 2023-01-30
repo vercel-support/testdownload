@@ -31,7 +31,6 @@ export default async function HostPage({
       <div className="min-h-[90vh] bg-conversly_color-snow">
         <Link href="/hosts"
           className="pl-6 pt-6 pb-10 flex flex-row space-x-2 lg:pl-44 lg:pb-0"
-          //onClick={() => router.push("/hosts")}
         >
           <ArrowLeftIcon className="w-5" />
           <h1 className="cursor-pointer font-body text-lg text-conversly_color">
@@ -39,7 +38,7 @@ export default async function HostPage({
           </h1>
         </Link>
         <div className="flex flex-col lg:flex-row items-center md:mt-16">
-          <div className="body flex flex-col h-7/8 justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] lg:pl-44 md:rounded-t-[4rem] md:rounded-tl-none md:pt-44 md:p-16 lg:w-[70%] lg:h-[70vh]">
+          <div className="body flex flex-col h-full justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] lg:pl-44 md:rounded-t-[4rem] md:rounded-tl-none md:pt-44 md:p-16 lg:w-[70%] ">
             <div className="flex flex-col">
               <div className="flex h-full mx-auto items-end bottom-0 z-50">
                 <Image
