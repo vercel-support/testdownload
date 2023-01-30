@@ -4,6 +4,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { supabase } from "../../../utils/supabase";
 import Script from "next/script";
 import Link from "next/link";
+import Router from 'next/navigation'
 
 export const revalidate = 60;
 
@@ -18,6 +19,7 @@ export default async function HostPage({
     .match({ username })
     .single();
   const [host] = await Promise.all([profile]);
+
 
   return (
     <div>
