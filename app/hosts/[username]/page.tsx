@@ -4,7 +4,6 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { supabase } from "../../../utils/supabase";
 import Script from "next/script";
 import Link from "next/link";
-import Router from 'next/navigation'
 
 export const revalidate = 60;
 
