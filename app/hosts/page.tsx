@@ -20,7 +20,7 @@ export default async function Page() {
          <h1 className="font-title text-4xl mb-10">
            Your favorite language hosts
          </h1>
-         <div className="grid w-full md:grid-flow-col md:grid-cols-3 xl:grid-cols-4 gap-8">
+         <div className="grid w-full md:grid-cols-3 xl:grid-cols-4 gap-8">
            {data!.map((profile) => (
              <div>
                <Link href={`/hosts/${profile.username}`}
