@@ -31,6 +31,7 @@ export default async function Page() {
          </h1>
          <div className="grid w-full grid-cols-3 gap-8">
            {data!.map((profile) => (
+             // eslint-disable-next-line react/jsx-key
              <div>
                <Link href={`/hosts/${profile.username}`}
                  key={profile.id}
