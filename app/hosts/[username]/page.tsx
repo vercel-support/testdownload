@@ -27,48 +27,38 @@ export default async function HostPage({
       </>
       {/* <pre>{JSON.stringify(profile, null, 2)}</pre> */}
 
-      <div className="min-h-[90vh] bg-conversly_color-snow">
+      <div className="min-h-screen">
         <Link href="/hosts"
-          className="pl-6 pt-6 pb-10 flex flex-row space-x-2 lg:pl-44 lg:pb-0"
+          className="pl-6 pt-6 pb-10 flex flex-row space-x-2 lg:pl-44"
         >
           <ArrowLeftIcon className="w-5" />
-          <h1 className="cursor-pointer font-body text-lg text-conversly_color">
+          <h1>
             See all hosts
           </h1>
         </Link>
-        <div className="flex flex-col lg:flex-row items-center md:mt-16">
-          <div className="body flex flex-col h-full justify-center py-6 items-center bg-conversly_color rounded-t-[2rem] rounded-tr-[2rem] lg:pl-44 md:rounded-t-[4rem] md:rounded-tl-none md:pt-44 md:p-16 lg:w-[70%] ">
-            <div className="flex flex-col">
-              <div className="flex h-full mx-auto items-end bottom-0 z-50">
+        <div>
+          <div>
+            <div className="flex flex-col justify-center items-center mx-10 mt-32">
+              <div>
                 <Image
                   src={profile.avatar_url}
                   alt="host's profile picture`"
                   width="150"
                   height="150"
-                  className="rounded-full w-56 h-56 md:w-72 md:h-72 object-cover -mt-24 md:-mt-44 mb-8 border-[20px] border-conversly_color-snow lg:-mt-56"
+                  className="rounded-full w-56 h-56 object-cover -mt-24 md:-mt-44 mb-8 lg:-mt-56"
                 />
               </div>
-              <h1 className="font-title text-center text-conversly_color-snow text-3xl md:text-5xl">
+              <h1>
                 {profile.full_name}
               </h1>
-              <p className="text-lg text-conversly_color-snow py-8 text-center">
-                {profile.languages}
-              </p>
-              <h2 className="text-lg text-conversly_color-snow text-left pb-8">
+              <h2>
                 {profile.bio}
               </h2>
-
-              <div
-                className="calendly-inline-widget min-w-[320px] h-screen lg:hidden"
+              <div className="calendly-inline-widget w-full h-screen"
                 data-url={profile.calendar_embed}
               ></div>
             </div>
           </div>
-
-          <div
-            className="calendly-inline-widget w-full h-screen hidden lg:block"
-            data-url={profile.calendar_embed}
-          ></div>
         </div>
       </div>
     </div>

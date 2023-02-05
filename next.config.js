@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
-    ignoreBuildErrors: true,
-  },
+   typescript: {
+     // !! WARN !!
+     // Dangerously allow production builds to successfully complete even if
+     // your project has type errors.
+     // !! WARN !!
+     ignoreBuildErrors: true,
+   },
   reactStrictMode: true,
   experimental: {
     appDir: true
@@ -15,7 +15,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'jspziykedkfpwoqxierl.supabase.co',
+        hostname: 'vfasnguqweqgkqllapci.supabase.co',
         port: '',
         pathname: '/**',
       },

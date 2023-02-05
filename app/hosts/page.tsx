@@ -1,4 +1,5 @@
 
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { supabase } from "../../utils/supabase";
@@ -14,13 +15,21 @@ export default async function Page() {
   const data = await getData();
 
   return (
-     <div className="body min-h-[90vh]">
-       <div className="flex flex-col items-center py-16">
+     <div className="body min-h-screen">
+      <Link href="/"
+          className="pl-6 pt-6 pb-10 flex flex-row space-x-2 lg:pl-44"
+        >
+          <ArrowLeftIcon className="w-5" />
+          <h1>
+            Back home
+          </h1>
+        </Link>
+       <div className="flex flex-col items-center py-16 space-y-8">
          {/* <pre>{JSON.stringify(data , null, 2)}</pre> */}
-         <h1 className="font-title text-4xl mb-10">
-           Your favorite language hosts
+         <h1>
+           This is our list of users
          </h1>
-         <div className="grid w-full md:grid-cols-3 xl:grid-cols-4 gap-8">
+         <div className="grid w-full grid-cols-3 gap-8">
            {data!.map((profile) => (
              <div>
                <Link href={`/hosts/${profile.username}`}
@@ -33,7 +42,7 @@ export default async function Page() {
                    {profile.avatar_url && (
                      <Image
                        src={profile.avatar_url}
-                       alt="host's profile picture"
+                       alt="user's profile picture"
                        width="200"
                        height="200"
                        className="rounded-full w-44 h-44 object-cover lg:w-36 lg:h-36"
