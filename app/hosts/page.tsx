@@ -29,7 +29,7 @@ export default async function Page() {
          <h1>
            This is our list of users
          </h1>
-         <div className="grid w-full grid-cols-3 gap-8">
+         <div className="grid w-full md:grid-cols-3 xl:grid-cols-4 gap-8">
            {data!.map((profile) => (
              <div>
                <Link href={`/hosts/${profile.username}`}
