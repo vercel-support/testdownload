@@ -22,19 +22,18 @@ export default async function HostPage({
 
   return (
     <div>
-      <>
+      {/* <>
         <Script src="https://assets.calendly.com/assets/external/widget.js" />
-      </>
+      </> */}
       {/* <pre>{JSON.stringify(profile, null, 2)}</pre> */}
 
       <div className="min-h-screen">
-        <Link href="/hosts"
+        <Link
+          href="/hosts"
           className="pl-6 pt-6 pb-10 flex flex-row space-x-2 lg:pl-44"
         >
           <ArrowLeftIcon className="w-5" />
-          <h1>
-            See all hosts
-          </h1>
+          <h1>See all hosts</h1>
         </Link>
         <div>
           <div>
@@ -48,15 +47,12 @@ export default async function HostPage({
                   className="rounded-full w-56 h-56 object-cover -mt-24 md:-mt-44 mb-8 lg:-mt-56"
                 />
               </div>
-              <h1>
-                {profile.full_name}
-              </h1>
-              <h2>
-                {profile.bio}
-              </h2>
-              <div className="calendly-inline-widget w-full h-screen"
-                data-url={profile.calendar_embed}
-              ></div>
+              <h1>{profile.full_name}</h1>
+              <h2>{profile.bio}</h2>
+
+              {/* <div className="calendly-inline-widget w-full h-screen"
+                 data-url={profile.calendar_embed}
+               ></div> */}
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@
     "**/*.tsx",
     "app/page.tsx",
     ".next/types/**/*.ts"
-  ],
+, "pages/api/whoami.jsx"  ],
   "exclude": [
     "node_modules"
   ]
