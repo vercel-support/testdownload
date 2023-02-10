@@ -1,83 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-    .language {
-        @apply mt-4 font-boldBody font-bold text-lg;
+
+  .body {
+    @apply bg-ac_color-dark text-ac_color-lightgold px-6 lg:px-44;
+}
+
+  .button {
+    @apply flex items-center justify-center bg-ac_color w-48 h-12 cursor-pointer mt-8 text-ac_color-lightgold text-xl font-sans border-ac_color-lightgold;
     }
 
-    .button {
-      @apply flex items-center justify-center bg-conversly_color w-48 h-12 rounded-full cursor-pointer mt-8 text-conversly_color-snow text-xl font-body;
-    }
-
-    .link {
-      @apply font-body hover:font-bold cursor-pointer;
+  .link {
+    @apply font-sans cursor-pointer;
   }
 
   .navlink {
-    @apply flex flex-row py-5 text-lg items-center space-x-3 font-body hover:font-bold;
+    @apply flex flex-row py-5 text-lg items-center space-x-3 font-sans;
   }
 
   .active-navlink {
-    @apply flex flex-row py-5 text-lg items-center space-x-3 font-body font-bold text-conversly_color-defaulthover;
+    @apply flex flex-row py-5 text-lg items-center space-x-3 font-sans text-ac_color-purple;
   }
-
-    .blush-bg {
-        @apply bg-conversly_color-blush h-28 w-28 flex flex-col justify-center items-center;
-    }
-
-    .light-bg {
-        @apply bg-conversly_color-light h-28 w-28 flex flex-col justify-center items-center;
-    }
-
-    .body {
-        @apply bg-conversly_color-snow text-conversly_color px-6 lg:px-44;
-    }
 
     .input-field {
-        @apply p-2 bg-conversly_color-light border-b border-black text-black;
+        @apply p-2 bg-ac_color-lightgold border-b border-black text-black;
     }
 
-    .faq-content {
-      @apply max-h-0 overflow-hidden text-opacity-0 transition-all duration-500 ease-[cubic-bezier(.84,.07,.25,.99)];
-  }
-
-    .faq-content-show {
-    @apply h-auto max-h-[9999px] transition-all  text-conversly_color text-opacity-100 duration-500 ease-[cubic-bezier(1,0,1,0)];
-}
-
-.tab-title {
-  @apply text-lg font-body font-bold text-conversly_color;
-}
-
-.faq-item {
-  @apply space-y-4 bg-conversly_color-blush hover:bg-conversly_color-blushhover p-6 cursor-pointer;
-}
-
-.tab-container {
-  @apply w-44 h-44 flex flex-col;
-}
-
-.tab-head {
-  @apply border-b flex flex-row bg-conversly_color-blush;
-}
-
-.tab {
-  @apply p-20 bg-conversly_color-snow;
-}
-
-.selected-tab {
-  @apply p-20 bg-conversly_color-blush;
-}
-
 .paragraph {
-  @apply my-5 font-body text-lg;
+  @apply my-5 font-sans text-lg;
 }
 
-    
 }

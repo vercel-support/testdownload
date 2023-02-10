@@ -8,21 +8,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        conversly_color: {
-          DEFAULT: "#8DB7CF",
-          light: "#C1E5D7",
-          lighthover:"#b2dfcd",
-          defaulthover: "#01342D",
-          blush: "#E5D6C4",
-          blushhover: "#deccb5",
-          snow: "#F9F8F2",
-          snowhover: "#f1efe1",
+        ac_color: {
+          DEFAULT: "#2D2532",
+          light: "#8D7C86",
+          purple:"#4F3763",
+          gold: "#BFAD8F",
+          lightgold: "#B8AF97",
+          dark: "#1A1A1A",
         },
       },
       fontFamily: {
-        title: ['Limelight', 'regular'],
-        body: ['Bellota Text', 'regular'],
-        boldBody: ['Bellota Text', 'bold'],
+        sans: ['var(--font-mulish)'],
+        serif: ['var(--font-roboto-serif)'],
       }
     },
   },
